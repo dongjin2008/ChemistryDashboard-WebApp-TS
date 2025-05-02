@@ -1,5 +1,29 @@
 <template>
   <div class="w-full flex flex-col items-center justify-center p-8 max-w-3xl mx-auto">
+    <div class="flex justify-center mb-8 gap-1">
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">Th</h1>
+      </div>
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">Ac</h1>
+      </div>
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">N</h1>
+      </div>
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">K</h1>
+      </div>
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">Y</h1>
+      </div>
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">O</h1>
+      </div>
+      <div class="flex group justify-center items-center w-[40px] h-[40px] border-2 border-secondary">
+        <h1 class="font-semibold text-secondary text-[16px]">U</h1>
+      </div>
+    </div>
+    
     <h1 class="font-semibold text-secondary text-[31px] mb-6">Thank You, Teachers!</h1>
     
     <div class="bg-white p-6 rounded-lg shadow-md w-full">
@@ -34,3 +58,53 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.element-box {
+  border: 2px solid #3b82f6;
+  border-radius: 4px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f9ff;
+  width: 60px;
+  height: 70px;
+  font-family: sans-serif;
+}
+
+.atomic-number {
+  font-size: 10px;
+  text-align: left;
+  width: 100%;
+  color: #1e40af;
+}
+
+.symbol {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+.name {
+  font-size: 9px;
+  color: #1e40af;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  
+  .element-box {
+    width: 50px;
+    height: 60px;
+  }
+  
+  .symbol {
+    font-size: 20px;
+  }
+}
+</style>
